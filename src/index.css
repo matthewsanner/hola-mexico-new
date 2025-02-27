@@ -1,7 +1,9 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap");
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 .nav-link {
-  @apply bg-gray-100 text-black py-2 px-6 rounded-full hover:bg-gray-300 transition-colors block text-center;
+  @apply block bg-gray-300 px-6 py-2 text-center text-black transition-colors hover:bg-gray-100;
 }

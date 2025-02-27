@@ -1,14 +1,25 @@
+import withMT from "@material-tailwind/react/utils/withMT";
+
 /** @type {import('tailwindcss').Config} */
-export default {
-  content: ["./index.html", "./src/**/*.{js,jsx,ts,tsx}"],
+export default withMT({
+  content: [
+    "./index.html",
+    "./src/**/*.{js,jsx,ts,tsx}",
+    "./node_modules/@material-tailwind/react/**/*.{js,ts,jsx,tsx}",
+  ],
   theme: {
     extend: {
       colors: {
         "navy-blue": "#1c1c3c",
         "mx-yellow": "#e6a802",
-        "light-mx-yellow": "#fbd73b",
+        "lt-mx-yellow": "#fbd73b",
+        "slate-gray": "#d9d9d8",
+      },
+      fontFamily: {
+        sans: ["Noto Sans", "sans-serif"],
+        condensed: ["Roboto Condensed", "sans-serif"],
       },
     },
   },
   plugins: [],
-};
+});
