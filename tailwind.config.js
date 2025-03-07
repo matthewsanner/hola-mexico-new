@@ -10,7 +10,7 @@ export default withMT({
   theme: {
     extend: {
       colors: {
-        "navy-blue": "#1c1c3c",
+        "navy-blue": "#2a2a5a",
         "mx-yellow": "#e6a802",
         "lt-mx-yellow": "#fbd73b",
         "slate-gray": "#d9d9d8",

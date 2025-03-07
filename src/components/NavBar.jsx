@@ -8,14 +8,18 @@ function NavBar() {
     setIsMenuOpen(!isMenuOpen);
   };
 
+  const closeMenu = () => {
+    setIsMenuOpen(false);
+  };
+
   return (
     <div className="bg-navy-blue">
-      <nav className="mx-auto max-w-[1400px] lg:p-4">
+      <nav className="mx-auto max-w-[1400px] p-4 pb-8">
         <div className="flex items-center justify-center">
           {/* Hamburger Icon (only visible on small screens) */}
           <button
             onClick={toggleMenu}
-            className="p-4 text-white focus:outline-none lg:hidden"
+            className="p-4 text-white focus:outline-none xl:hidden"
           >
             <svg
               className="h-10 w-10"
@@ -36,46 +40,69 @@ function NavBar() {
 
         {/* Menu (visible on larger screens and when toggled on smaller screens) */}
         <ul
-          className={`w-full items-center px-4 transition-all lg:flex lg:space-x-4 ${
+          className={`mx-auto max-w-md items-center px-4 transition-all xl:flex xl:max-w-none xl:space-x-4 ${
             isMenuOpen ? "block" : "hidden"
           }`}
         >
           <li className="flex-1">
-            <Link to="/" className="nav-link rounded-t-full lg:rounded-full">
+            <Link
+              to="/"
+              className="nav-link rounded-t-full xl:rounded-full"
+              onClick={closeMenu}
+            >
               Home
             </Link>
           </li>
           <li className="flex-1">
-            <Link to="/methodology" className="nav-link lg:rounded-full">
+            <Link
+              to="/methodology"
+              className="nav-link xl:rounded-full"
+              onClick={closeMenu}
+            >
               Methodology
             </Link>
           </li>
           <li className="flex-1">
-            <Link to="/classes" className="nav-link lg:rounded-full">
+            <Link
+              to="/classes"
+              className="nav-link xl:rounded-full"
+              onClick={closeMenu}
+            >
               Classes & Courses
             </Link>
           </li>
           <li className="flex-1">
-            <Link to="/about" className="nav-link lg:rounded-full">
+            <Link
+              to="/about"
+              className="nav-link xl:rounded-full"
+              onClick={closeMenu}
+            >
               About / Testimonials
             </Link>
           </li>
           <li className="flex-1">
-            <Link to="/faq" className="nav-link lg:rounded-full">
+            <Link
+              to="/faq"
+              className="nav-link xl:rounded-full"
+              onClick={closeMenu}
+            >
               FAQ
             </Link>
           </li>
           <li className="flex-1">
-            <Link to="/blog" className="nav-link lg:rounded-full">
+            <Link
+              to="/blog"
+              className="nav-link xl:rounded-full"
+              onClick={closeMenu}
+            >
               Blog
             </Link>
           </li>
           <li className="flex-1">
             <Link
               to="/contact"
-              className={
-                "block rounded-b-full bg-mx-yellow px-6 py-2 text-center text-black transition-colors hover:bg-lt-mx-yellow lg:rounded-full"
-              }
+              className="block rounded-b-full bg-mx-yellow px-6 py-2 text-center text-black transition-colors hover:bg-lt-mx-yellow xl:rounded-full"
+              onClick={closeMenu}
             >
               Book a class today!
             </Link>
