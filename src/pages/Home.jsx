@@ -1,6 +1,6 @@
 import logo from "../assets/home/logo.png";
 import group from "../assets/home/group.png";
-import divide from "../assets/home/divide.png";
+import divide from "../assets/reused/divide.png";
 import raised_hand from "../assets/home/raised_hand.png";
 import pen from "../assets/home/pen.png";
 import customized_learning from "../assets/home/customized_learning.png";
@@ -17,7 +17,7 @@ import comprehensive_language from "../assets/home/comprehensive_language.png";
 import regular_feedback from "../assets/home/regular_feedback.png";
 import choose_class from "../assets/home/choose_class.png";
 import testimonials from "../assets/home/testimonials.png";
-import trial_class from "../assets/home/trial_class.png";
+import trial_class from "../assets/reused/trial_class.png";
 import idea_people from "../assets/home/idea_people.png";
 import girl_mobile from "../assets/home/girl_mobile.png";
 import laptop from "../assets/home/laptop.png";
