@@ -17,7 +17,6 @@ import comprehensive_language from "../assets/home/comprehensive_language.png";
 import regular_feedback from "../assets/home/regular_feedback.png";
 import choose_class from "../assets/home/choose_class.png";
 import testimonials from "../assets/home/testimonials.png";
-import trial_class from "../assets/reused/trial_class.png";
 import idea_people from "../assets/home/idea_people.png";
 import girl_mobile from "../assets/home/girl_mobile.png";
 import laptop from "../assets/home/laptop.png";
@@ -35,6 +34,7 @@ import laptop_counter from "../assets/home/laptop_counter.png";
 import shout from "../assets/home/shout.png";
 import stairs from "../assets/home/stairs.png";
 import profile1 from "../assets/home/profile1.png";
+import highlight from "../assets/reused/highlight.png";
 
 import TestimonialCard from "../components/TestimonialCard";
 import ClassCard from "../components/ClassCard";
@@ -297,6 +297,7 @@ function Home() {
           </div>
         </div>
 
+        {/* Classes row */}
         <div className="relative flex flex-col items-center justify-center bg-navy-blue px-6 py-12">
           <img
             className="z-10 max-w-full md:w-2/3 lg:w-1/2"
@@ -541,30 +542,44 @@ function Home() {
           </Carousel>
         </div>
 
-        <div className="flex flex-col items-center justify-center bg-white p-5 py-20 md:flex-row">
-          <div className="md:w-2/3">
-            <img
-              className="px-4 lg:px-12"
-              src={trial_class}
-              alt="take a free trial class"
-            />
+        <div className="flex flex-col items-center justify-center bg-white px-5 py-20 md:flex-row">
+          <div className="flex flex-col items-center md:w-2/3">
+            <a href="/contact">
+              <div className="m-4 max-w-2xl rounded-lg bg-slate-gray p-6 shadow-lg shadow-gray-500">
+                <h2 className="text-4xl font-bold text-navy-blue lg:text-5xl">
+                  Take A Free Trial Class
+                </h2>
+                <div className="relative flex items-center">
+                  <img
+                    src={highlight}
+                    alt="highlight"
+                    className="absolute mx-auto max-w-60"
+                  />
+                  <p className="relative px-1 py-3 text-lg font-semibold text-navy-blue lg:text-xl">
+                    Schedule your free trial class today or contact us with any
+                    questions!
+                  </p>
+                </div>
+              </div>
+            </a>
+
             <a href="mailto:holamexicohola@gmail.com">
-              <div className="m-8 rounded-lg border border-black p-4 text-center text-lg shadow-xl lg:mx-auto lg:w-2/3">
+              <div className="m-4 min-w-96 rounded-lg border border-black p-4 text-center text-lg shadow-xl hover:bg-mx-yellow">
                 Email: holamexicohola@gmail.com
               </div>
             </a>
             <a href="tel:+525520616969">
-              <div className="m-8 rounded-lg border border-black p-4 text-center text-lg shadow-xl lg:mx-auto lg:w-2/3">
+              <div className="m-4 min-w-96 rounded-lg border border-black p-4 text-center text-lg shadow-xl hover:bg-mx-yellow">
                 WhatsApp: +52 55 2061 6969
               </div>
             </a>
             <a href="tel:+525570254108">
-              <div className="m-8 rounded-lg border border-black p-4 text-center text-lg shadow-xl lg:mx-auto lg:w-2/3">
+              <div className="m-4 min-w-96 rounded-lg border border-black p-4 text-center text-lg shadow-xl hover:bg-mx-yellow">
                 Office: +52 55 7025 4108
               </div>
             </a>
           </div>
-          <div className="max-w-xl px-4 md:w-1/3">
+          <div className="max-w-xl p-4 md:w-1/3">
             <img
               className="p-4"
               src={idea_people}

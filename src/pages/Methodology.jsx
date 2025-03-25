@@ -7,8 +7,9 @@ import scribble from "../assets/methodology/scribble.png";
 import coffee_laptop from "../assets/methodology/coffee_laptop.png";
 import rocket from "../assets/methodology/rocket.png";
 import divide from "../assets/reused/divide.png";
-import trial_class_arrow from "../assets/methodology/trial_class_arrow.png";
 import group_talking from "../assets/methodology/group_talking.png";
+import highlight from "../assets/reused/highlight.png";
+import arrow from "../assets/methodology/arrow.png";
 
 function Methodology() {
   return (
@@ -290,36 +291,56 @@ function Methodology() {
         </div>
 
         {/* Tenth row */}
-        <div className="flex justify-center bg-white px-10 pt-20">
-          <img
-            className="w-full max-w-2xl lg:max-w-3xl"
-            src={trial_class_arrow}
-            alt="take a free trial class"
-          />
+        <div className="flex justify-center bg-white px-5 py-14">
+          <div className="flex flex-col items-center md:w-2/3">
+            <a href="/contact">
+              <div className="relative m-4 max-w-2xl rounded-lg bg-slate-gray p-6 shadow-lg shadow-gray-500">
+                <h2 className="text-4xl font-bold text-navy-blue lg:text-5xl">
+                  Take A Free Trial Class
+                </h2>
+                <img
+                  className="absolute -right-20 top-28 hidden w-32 md:block lg:top-10"
+                  src={arrow}
+                  alt="arrow"
+                />
+                <div className="relative flex items-center">
+                  <img
+                    src={highlight}
+                    alt="highlight"
+                    className="absolute mx-auto max-w-60"
+                  />
+                  <p className="relative px-1 py-3 text-lg font-semibold text-navy-blue lg:text-xl">
+                    Schedule your free trial class today or contact us with any
+                    questions!
+                  </p>
+                </div>
+              </div>
+            </a>
+          </div>
         </div>
 
         {/* Eleventh row */}
-        <div className="flex flex-col justify-center bg-white xl:flex-row">
-          <div className="mx-auto flex max-w-lg items-end px-12 xl:order-2 xl:w-1/3 xl:pl-0 xl:pr-12">
+        <div className="flex flex-col bg-white lg:flex-row">
+          <div className="mx-auto flex max-w-lg items-end justify-end px-12 lg:order-2 lg:w-1/2 lg:pl-0 lg:pr-12">
             <img
-              className=""
+              className="object-contain"
               src={group_talking}
               alt="group of people talking"
             />
           </div>
-          <div className="p-6 pb-20 xl:order-1 xl:w-2/3 xl:pb-6">
+          <div className="flex flex-col items-center p-6 pb-20 lg:order-1 lg:w-1/2 lg:pb-6">
             <a href="mailto:holamexicohola@gmail.com">
-              <div className="m-8 rounded-lg border border-black p-4 text-center text-lg shadow-xl lg:mx-auto lg:w-2/3">
+              <div className="m-4 min-w-96 rounded-lg border border-black p-4 text-center text-lg shadow-xl hover:bg-mx-yellow">
                 Email: holamexicohola@gmail.com
               </div>
             </a>
             <a href="tel:+525520616969">
-              <div className="m-8 rounded-lg border border-black p-4 text-center text-lg shadow-xl lg:mx-auto lg:w-2/3">
+              <div className="m-4 min-w-96 rounded-lg border border-black p-4 text-center text-lg shadow-xl hover:bg-mx-yellow">
                 WhatsApp: +52 55 2061 6969
               </div>
             </a>
             <a href="tel:+525570254108">
-              <div className="m-8 rounded-lg border border-black p-4 text-center text-lg shadow-xl lg:mx-auto lg:w-2/3">
+              <div className="m-4 min-w-96 rounded-lg border border-black p-4 text-center text-lg shadow-xl hover:bg-mx-yellow">
                 Office: +52 55 7025 4108
               </div>
             </a>

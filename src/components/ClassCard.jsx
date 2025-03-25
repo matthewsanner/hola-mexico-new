@@ -13,7 +13,7 @@ const ClassCard = ({ header, subheader, content, image, altText }) => {
 
         {/* Card Content (Now has padding separately) */}
         <div className="p-6">
-          <h2 className="lg:text-2xlfont-bold text-xl text-navy-blue">
+          <h2 className="text-lg italic text-navy-blue lg:text-xl">
             {subheader}
           </h2>
           <p className="mt-2 text-lg text-navy-blue lg:text-xl">{content}</p>
