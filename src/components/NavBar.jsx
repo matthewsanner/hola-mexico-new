@@ -91,7 +91,7 @@ function NavBar() {
           </li>
           <li className="flex-1">
             <Link
-              to="/blog"
+              to="https://holamexicohola.com/blog/"
               className="nav-link xl:rounded-full"
               onClick={closeMenu}
             >
