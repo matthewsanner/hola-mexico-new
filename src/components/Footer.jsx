@@ -50,13 +50,13 @@ function Footer() {
             </ul>
 
             {/* Call to Action */}
-            <h3 className="text-center text-xl font-semibold">
+            <p className="text-center text-lg font-semibold">
               Ready to start learning Spanish?{" "}
               <a href="/contact" className="text-blue-600 hover:underline">
                 Contact us today
               </a>{" "}
               to schedule your free trial class!
-            </h3>
+            </p>
 
             {/* Social Icons */}
             <div className="flex space-x-6">

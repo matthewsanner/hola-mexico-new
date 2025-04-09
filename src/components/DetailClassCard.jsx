@@ -114,10 +114,11 @@ const ClassCard = ({
 
               <DialogFooter className="flex justify-end p-1">
                 <Link
-                  to="/contact"
+                  to="https://docs.google.com/forms/d/e/1FAIpQLSfVOY6lOHoTMTY1muh39EThZrH6uEgIqU5NUoIzlNbffZpVnQ/viewform?usp=header"
                   className={
                     "m-4 block rounded-full bg-mx-yellow px-6 py-2 text-center text-lg text-black transition-colors hover:bg-lt-mx-yellow lg:rounded-full"
                   }
+                  target="_blank"
                 >
                   What&apos;s my level?
                 </Link>
@@ -127,7 +128,7 @@ const ClassCard = ({
                     "m-4 block rounded-full bg-mx-yellow px-6 py-2 text-center text-lg text-black transition-colors hover:bg-lt-mx-yellow lg:rounded-full"
                   }
                 >
-                  Register/Book
+                  Book a class
                 </Link>
                 <Link
                   onClick={handleOpen}

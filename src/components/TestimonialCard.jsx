@@ -18,7 +18,7 @@ const TestimonialCard = ({ text, name, image, rating, maxWidth = "lg" }) => {
           <img
             src={image}
             alt="student profile picture"
-            className="mx-auto -mt-14 h-24 w-24 rounded-full shadow-lg"
+            className="mx-auto -mt-14 h-24 w-24 rounded-full p-1 shadow-lg"
           />
 
           {/* Testimonial Text */}

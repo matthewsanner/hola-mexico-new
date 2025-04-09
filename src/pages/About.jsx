@@ -9,9 +9,8 @@ import rays_left from "../assets/about/rays_left.png";
 import stars from "../assets/about/stars.png";
 import paper_plane from "../assets/about/paper_plane.png";
 
-import profile1 from "../assets/home/profile1.png";
-
 import TestimonialCard from "../components/TestimonialCard";
+import testimonials_data from "../data/testimonials.js";
 
 import { IconButton, Carousel } from "@material-tailwind/react";
 
@@ -143,27 +142,16 @@ function About() {
               </IconButton>
             )}
           >
-            <TestimonialCard
-              text="At HMH, each lesson is an opportunity to grow and overcome challenges, all while learning in an environment that values authenticity and personalized education."
-              image={profile1}
-              rating={5}
-              name="Tom Sandoval"
-              maxWidth="2xl"
-            />
-            <TestimonialCard
-              text="At HMH, each lesson is an opportunity to grow and overcome challenges, all while learning in an environment that values authenticity and personalized education."
-              image={profile1}
-              rating={5}
-              name="Tom Sandoval"
-              maxWidth="2xl"
-            />
-            <TestimonialCard
-              text="At HMH, each lesson is an opportunity to grow and overcome challenges, all while learning in an environment that values authenticity and personalized education."
-              image={profile1}
-              rating={5}
-              name="Tom Sandoval"
-              maxWidth="2xl"
-            />
+            {testimonials_data.map((testimonial, index) => (
+              <TestimonialCard
+                key={index}
+                text={testimonial.text}
+                image={testimonial.image}
+                rating={testimonial.rating}
+                name={testimonial.name}
+                maxWidth="2xl"
+              />
+            ))}
           </Carousel>
         </div>
 

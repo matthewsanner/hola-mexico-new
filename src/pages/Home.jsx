@@ -33,11 +33,11 @@ import coffee_notebook from "../assets/home/coffee_notebook.png";
 import laptop_counter from "../assets/home/laptop_counter.png";
 import shout from "../assets/home/shout.png";
 import stairs from "../assets/home/stairs.png";
-import profile1 from "../assets/home/profile1.png";
 import highlight from "../assets/reused/highlight.png";
 
 import TestimonialCard from "../components/TestimonialCard";
 import ClassCard from "../components/ClassCard";
+import testimonials_data from "../data/testimonials.js";
 
 import { Link } from "react-router-dom";
 import { IconButton, Carousel } from "@material-tailwind/react";
@@ -521,24 +521,15 @@ function Home() {
               </IconButton>
             )}
           >
-            <TestimonialCard
-              text="At HMH, each lesson is an opportunity to grow and overcome challenges, all while learning in an environment that values authenticity and personalized education."
-              image={profile1}
-              rating={5}
-              name="Tom Sandoval"
-            />
-            <TestimonialCard
-              text="At HMH, each lesson is an opportunity to grow and overcome challenges, all while learning in an environment that values authenticity and personalized education."
-              image={profile1}
-              rating={5}
-              name="Tom Sandoval"
-            />
-            <TestimonialCard
-              text="At HMH, each lesson is an opportunity to grow and overcome challenges, all while learning in an environment that values authenticity and personalized education."
-              image={profile1}
-              rating={5}
-              name="Tom Sandoval"
-            />
+            {testimonials_data.map((testimonial, index) => (
+              <TestimonialCard
+                key={index}
+                text={testimonial.text}
+                image={testimonial.image}
+                rating={testimonial.rating}
+                name={testimonial.name}
+              />
+            ))}
           </Carousel>
         </div>
 
