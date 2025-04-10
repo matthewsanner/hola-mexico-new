@@ -3,52 +3,38 @@ import divide from "../assets/reused/divide.png";
 
 import { useState } from "react";
 import { MdExpandMore, MdExpandLess } from "react-icons/md";
+import { Link } from "react-router-dom";
 
 const faqData = {
   "Spanish Classes": [
     {
       question: "How can I enroll in Spanish classes?",
       answer:
-        "You can enroll by visiting our website and selecting the class that fits your level. Simply follow the enrollment instructions provided.",
+        "You can enroll by visiting our website and find the class that fits your level. Then, send us a message through the form on the contact page, or through Whatsapp, our office phone, social media, or email. You can find all the contact information at the bottom of any page of our site.",
     },
     {
       question: "Do you offer a free trial class?",
       answer:
-        "Yes! We offer a free 30-minute trial class for new students to experience our teaching methods.",
-    },
-    {
-      question: "What levels of Spanish classes do you offer?",
-      answer:
-        "We offer classes from beginner to advanced levels, including specialized courses for business and travel.",
-    },
-    {
-      question: "What platforms do you use for online Spanish?",
-      answer:
-        "We use Zoom and Google Meet for our online Spanish classes, ensuring interactive and engaging lessons.",
+        "Yes! We offer a free 1-hour trial class for new students to experience our teaching methods.",
     },
   ],
-  "Online Store": [
-    {
-      question: "What products do you sell in the online store?",
-      answer:
-        "We sell books, flashcards, worksheets, and digital resources to help you learn Spanish more effectively.",
-    },
-    {
-      question: "Do you offer refunds or exchanges?",
-      answer:
-        "Yes, we have a 14-day return policy for physical items. Digital items are non-refundable.",
-    },
-  ],
+  // "Online Store": [
+  //   {
+  //     question: "What products do you sell in the online store?",
+  //     answer:
+  //       "We sell books, flashcards, worksheets, and digital resources to help you learn Spanish more effectively.",
+  //   },
+  //   {
+  //     question: "Do you offer refunds or exchanges?",
+  //     answer:
+  //       "Yes, we have a 14-day return policy for physical items. Digital items are non-refundable.",
+  //   },
+  // ],
   "Payments & Policies": [
     {
       question: "What payment methods do you accept?",
       answer:
-        "We accept credit/debit cards, PayPal, and Apple Pay for all our services and products.",
-    },
-    {
-      question: "Do you offer installment plans?",
-      answer:
-        "Yes, we offer installment plans for some of our higher-priced courses. Contact us for more details.",
+        "We accept PayPal transfers for all classes, or cash for in-person classes. If those options are not convenient for you, we can make other arrangements.",
     },
   ],
 };
@@ -81,7 +67,7 @@ function Faq() {
                   onClick={() => setActiveTab(tab)}
                   className={`rounded-t-lg px-4 py-2 text-lg ${
                     activeTab === tab
-                      ? "border-b-2 border-blue-600 font-bold text-blue-600"
+                      ? "border-b-2 border-navy-blue font-bold text-navy-blue"
                       : "text-gray-600"
                   }`}
                 >
@@ -112,16 +98,19 @@ function Faq() {
                 ))}
               </div>
 
-              <div className="flex flex-col items-center rounded-lg bg-white p-6 text-center shadow-md md:ml-6 md:w-1/3">
+              <div className="mt-6 flex flex-col items-center rounded-lg bg-white p-6 text-center shadow-md md:ml-6 md:mt-0 md:w-1/3">
                 <h2 className="text-2xl font-bold text-gray-800">
                   Still Have Questions?
                 </h2>
                 <p className="mt-3 text-gray-600">
                   If you have any further questions or need additional
                   information, feel free to reach out! We&apos;re here to help
-                  you on your journey to mastering Spanish. Contact us directly
-                  through our form, email, or social media, and we&apos;ll be
-                  happy to assist you.
+                  you on your journey to mastering Spanish.{" "}
+                  <Link className="text-navy-blue underline" to="/contact">
+                    Contact us
+                  </Link>{" "}
+                  directly through our form, email, or social media, and
+                  we&apos;ll be happy to assist you.
                 </p>
                 <div className="m-4">
                   <img src={faq} alt="man asking a woman a question" />

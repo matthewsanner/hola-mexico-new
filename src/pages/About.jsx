@@ -3,11 +3,11 @@ import rays from "../assets/about/rays.png";
 import book from "../assets/about/book.png";
 import calendar from "../assets/about/calendar.png";
 import pen from "../assets/about/pen.png";
-import about_me from "../assets/about/about_me.png";
 import notebook from "../assets/about/notebook.png";
 import rays_left from "../assets/about/rays_left.png";
 import stars from "../assets/about/stars.png";
 import paper_plane from "../assets/about/paper_plane.png";
+import portrait from "../assets/about/portrait.png";
 
 import TestimonialCard from "../components/TestimonialCard";
 import testimonials_data from "../data/testimonials.js";
@@ -78,7 +78,7 @@ function About() {
           </div>
 
           <Carousel
-            className="max-w-4xl rounded-xl pb-36 pt-20"
+            className="max-w-4xl rounded-xl pb-32 pt-16"
             navigation={({ setActiveIndex, activeIndex, length }) => (
               // Place the navigation OUTSIDE the carousel
               <div className="absolute bottom-4 left-2/4 z-50 flex -translate-x-2/4 gap-2">
@@ -177,11 +177,11 @@ function About() {
             src={stars}
             alt="stars"
           />
-          <div className="z-10 flex w-full flex-col pt-10 text-center lg:w-1/3 xl:p-10">
+          <div className="z-10 flex w-full flex-col pt-10 text-center lg:w-1/3">
             <h3 className="text-4xl font-bold text-mx-yellow">About Me</h3>
             <img
               className="mx-auto my-6 w-full max-w-lg"
-              src={about_me}
+              src={portrait}
               alt="portrait of the teacher"
             />
           </div>

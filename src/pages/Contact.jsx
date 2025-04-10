@@ -93,9 +93,12 @@ function Contact() {
           <p className="z-10 p-4 text-2xl font-bold">
             We&apos;d love to hear from you!
           </p>
-          <p className="z-10 px-4 py-10 text-lg">
+          <p className="z-10 px-4 py-10 text-center text-lg md:px-8 xl:w-3/4">
             Whether you have questions, need more information, or want to start
-            your Spanish learning journey, we&apos;re here to help.
+            your Spanish learning journey, we&apos;re here to help. If
+            you&apos;d like to book a class, please let us know which classes
+            interest you in your message and we can schedule your trial class
+            for free!
           </p>
           <div className="z-10 flex w-full flex-col items-center justify-center gap-10 px-6 py-12 lg:flex-row">
             <form
@@ -133,7 +136,7 @@ function Contact() {
                 required
                 className="rounded-md border border-gray-300 p-3"
                 placeholder="Your message..."
-                rows="4"
+                rows="8"
               />
 
               <button

@@ -52,7 +52,7 @@ function Footer() {
             {/* Call to Action */}
             <p className="text-center text-lg font-semibold">
               Ready to start learning Spanish?{" "}
-              <a href="/contact" className="text-blue-600 hover:underline">
+              <a href="/contact" className="text-mx-yellow hover:underline">
                 Contact us today
               </a>{" "}
               to schedule your free trial class!
