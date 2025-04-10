@@ -38,9 +38,9 @@ function Footer() {
                 </Link>
               </li>
               <li>
-                <Link to="/blog" className="hover:underline">
+                <a href="/blog" className="hover:underline">
                   Blog
-                </Link>
+                </a>
               </li>
               <li>
                 <Link to="/contact" className="hover:underline">
