@@ -1,17 +1,22 @@
 import PropTypes from "prop-types";
-import quotation from "../assets/home/quotation.png";
+import quotation from "../assets/testimonials/quotation.png";
+import star from "../assets/testimonials/star.png";
 
 const TestimonialCard = ({ text, name, image, rating, maxWidth = "lg" }) => {
   return (
-    <div className="mx-6 flex justify-center">
+    <div className="mx-4 flex justify-center">
       <div className="flex w-fit justify-center rounded-xl bg-white p-3 shadow-xl shadow-gray-600">
         {/* Inner Card with Gray Border */}
         <div
           className={`relative rounded-lg border border-gray-400 bg-white p-6 text-center ${maxWidth === "2xl" ? "max-w-2xl" : "max-w-lg"}`}
         >
           {/* Decorative Quote Icon */}
-          <div className="absolute -top-11 left-4 text-9xl text-mx-yellow">
-            <img className="w-24" src={quotation} alt="quotation mark" />
+          <div className="absolute -top-11 left-4 text-mx-yellow">
+            <img
+              className="w-20 md:w-24"
+              src={quotation}
+              alt="quotation mark"
+            />
           </div>
 
           {/* Profile Image */}
@@ -28,8 +33,10 @@ const TestimonialCard = ({ text, name, image, rating, maxWidth = "lg" }) => {
           <p className="mt-4 italic lg:text-lg">{name}</p>
 
           {/* Star Ratings */}
-          <div className="mt-4 flex items-center justify-center text-4xl">
-            {"⭐".repeat(rating)}
+          <div className="mt-4 flex items-center justify-center">
+            {Array.from({ length: rating }).map((_, i) => (
+              <img key={i} src={star} alt="star" className="mx-1 h-12 w-12" />
+            ))}
           </div>
         </div>
       </div>

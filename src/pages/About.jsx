@@ -39,7 +39,7 @@ function About() {
         </div>
 
         {/* Second row */}
-        <div className="relative flex flex-col items-center bg-white p-5">
+        <div className="relative flex flex-col items-center bg-white">
           <img
             className="absolute left-0 top-0 max-w-56 lg:max-w-56"
             src={book}
@@ -61,7 +61,7 @@ function About() {
             alt="calendar"
           />
 
-          <div className="z-10 w-4/5 lg:w-2/3">
+          <div className="z-10 w-full px-8 md:w-4/5 md:px-0 lg:w-2/3">
             <p className="pb-10 pt-6 text-2xl text-navy-blue lg:pt-16">
               Welcome to Hola México Hola - a place where every student finds
               their own path to mastering Spanish.
@@ -156,7 +156,7 @@ function About() {
         </div>
 
         {/* Third row */}
-        <div className="relative flex flex-col bg-navy-blue px-6 py-20 lg:flex-row">
+        <div className="relative flex flex-col bg-navy-blue px-8 py-20 xl:flex-row xl:gap-8">
           <img
             className="absolute left-0 top-0 max-w-72 lg:max-w-xs"
             src={rays_left}
@@ -177,7 +177,7 @@ function About() {
             src={stars}
             alt="stars"
           />
-          <div className="z-10 flex w-full flex-col pt-10 text-center lg:w-1/3">
+          <div className="z-10 flex w-full flex-col pt-10 text-center xl:w-1/3">
             <h3 className="text-4xl font-bold text-mx-yellow">About Me</h3>
             <img
               className="mx-auto my-6 w-full max-w-lg"
@@ -185,7 +185,7 @@ function About() {
               alt="portrait of the teacher"
             />
           </div>
-          <div className="p-6 px-10 text-2xl text-white lg:w-2/3">
+          <div className="py-6 text-2xl text-white lg:px-6 xl:w-2/3 xl:px-0">
             <p>
               Hello, I&apos;m Ernesto, the founder of Hola México Hola. With
               over nine years of experience in Spanish teaching, I have

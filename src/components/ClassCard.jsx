@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 const ClassCard = ({ header, subheader, content, image, altText }) => {
   return (
-    <div className="relative mx-14 mb-10 mt-2 flex flex-col items-center justify-center">
+    <div className="relative mx-4 mb-10 mt-2 flex flex-col items-center justify-center">
       {/* Card Container */}
       <div className="relative max-w-md rounded-xl bg-gradient-to-b from-gray-200 to-gray-400 text-center shadow-xl shadow-gray-900">
         {/* Top Tab */}

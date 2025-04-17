@@ -6,18 +6,6 @@ import kristine from "../assets/testimonials/kristine.jpeg";
 
 const testimonials = [
   {
-    text: "I've been taking classes with Hola Mexico for over five years, both in person and online. We always discuss a variety of topics, and it's more like talking to a friend (who gives me advice on which words to use). The class is personalized if you have a specific vocabulary or subject you'd like to learn. We also practice vocabulary from various situations. I really enjoy it.",
-    image: default_user,
-    rating: 5,
-    name: "Sara",
-  },
-  {
-    text: "Ernesto is a very professional teacher. His teaching style allowed me to easily learn the basics of Spanish. He listens and explains the answers to my questions clearly.",
-    image: default_user,
-    rating: 5,
-    name: "Mike",
-  },
-  {
     text: "Me encanta los clases con Ernesto y Hola México Hola! Ernesto does a great job creating a safe place for you to learn, designing a class and curriculum that matches your existing knowledge of Spanish and brings in your personal interests. Each class is a great balance of conversation and structured learning. I recommend to anyone looking to improve their español at any level!",
     image: maddy,
     rating: 5,
@@ -29,6 +17,19 @@ const testimonials = [
     rating: 5,
     name: "Connor Frischmeyer",
   },
+  {
+    text: "I've been taking classes with Hola Mexico for over five years, both in person and online. We always discuss a variety of topics, and it's more like talking to a friend (who gives me advice on which words to use). The class is personalized if you have a specific vocabulary or subject you'd like to learn. We also practice vocabulary from various situations. I really enjoy it.",
+    image: default_user,
+    rating: 5,
+    name: "Sara",
+  },
+  {
+    text: "Ernesto is a very professional teacher. His teaching style allowed me to easily learn the basics of Spanish. He listens and explains the answers to my questions clearly.",
+    image: default_user,
+    rating: 5,
+    name: "Mike",
+  },
+
   {
     text: "The classes are fun and I love talking with Ernesto and learning new things about topics that interest me.",
     image: ariella,

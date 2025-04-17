@@ -112,7 +112,7 @@ const ClassCard = ({
                 <p className="py-2">{closer}</p>
               </DialogBody>
 
-              <DialogFooter className="flex justify-end p-1">
+              <DialogFooter className="flex justify-center p-1">
                 <Link
                   to="https://docs.google.com/forms/d/e/1FAIpQLSfVOY6lOHoTMTY1muh39EThZrH6uEgIqU5NUoIzlNbffZpVnQ/viewform?usp=header"
                   className={

@@ -101,7 +101,7 @@ function NavBar() {
           <li className="flex-1">
             <Link
               to="/contact"
-              className="block rounded-b-full bg-mx-yellow px-6 py-2 text-center text-black transition-colors hover:bg-lt-mx-yellow xl:rounded-full"
+              className="block rounded-b-full bg-mx-yellow px-6 py-2 text-center text-lg text-black transition-colors hover:bg-lt-mx-yellow xl:rounded-full xl:text-base"
               onClick={closeMenu}
             >
               Book a class today!
