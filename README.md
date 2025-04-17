@@ -1,4 +1,4 @@
-## Live Demo
+## Live Website
 
 Check out the live site at [https://holamexicohola.com](https://holamexicohola.com).
 
