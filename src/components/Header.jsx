@@ -1,13 +1,16 @@
 import { FaInstagram, FaFacebook, FaLinkedin } from "react-icons/fa";
+import { Link } from "react-router-dom";
 
 function Header() {
   return (
     <header className="bg-navy-blue p-4 text-white">
       <div className="container mx-auto flex max-w-[1400px] items-center justify-between gap-4">
         {/* Left Section - Logo/Text */}
-        <h1 className="px-2 text-2xl font-bold uppercase tracking-widest">
-          HMH IMMERSIVE SPANISH EDUCATION
-        </h1>
+        <Link to="/">
+          <h1 className="px-2 text-2xl font-bold uppercase tracking-widest">
+            HMH IMMERSIVE SPANISH EDUCATION
+          </h1>
+        </Link>
 
         {/* Right Section - Social Icons */}
         <div className="flex space-x-6">
