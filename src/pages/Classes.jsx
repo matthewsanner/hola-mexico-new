@@ -214,7 +214,7 @@ function Classes() {
               benefit2="Share the learning journey with friends"
               benefit3="Adapted to group needs and interests"
               benefit4="Engage with Spanish through cultural insights"
-              closer="Available upon scheduling to match group availability. Contact us to set up your group’s Spanish learning sessions."
+              closer="Available upon scheduling to match group availability. Contact us to set up your group's Spanish learning sessions."
             />
             <DetailClassCard
               header="Beginner's Spanish Package (A1 to A2)"
