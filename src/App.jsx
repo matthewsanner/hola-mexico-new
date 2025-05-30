@@ -12,12 +12,12 @@ import Footer from "./components/Footer";
 import ScrollToTop from "./components/ScrollToTop";
 import usePageTracking from "./hooks/usePageTracking";
 
-function App() {
-  function PageTracker() {
-    usePageTracking();
-    return null;
-  }
+function PageTracker() {
+  usePageTracking();
+  return null;
+}
 
+function App() {
   return (
     <Router>
       <PageTracker />
