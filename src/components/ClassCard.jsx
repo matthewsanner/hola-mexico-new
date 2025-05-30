@@ -56,12 +56,12 @@ const ClassCard = ({
 
           {/* Button */}
           <div className="mt-8 flex justify-center">
-            <Link
+            <button
               onClick={handleOpen}
               className="block w-fit rounded-full bg-mx-yellow px-6 py-2 text-center text-lg text-black transition-colors hover:bg-lt-mx-yellow lg:rounded-full lg:text-xl"
             >
               Read more...
-            </Link>
+            </button>
           </div>
 
           <Dialog
@@ -109,15 +109,16 @@ const ClassCard = ({
                 </DialogBody>
 
                 <DialogFooter className="flex justify-center p-1">
-                  <Link
+                  <a
                     to="https://docs.google.com/forms/d/e/1FAIpQLSfVOY6lOHoTMTY1muh39EThZrH6uEgIqU5NUoIzlNbffZpVnQ/viewform?usp=header"
                     className={
                       "m-4 block rounded-full bg-mx-yellow px-6 py-2 text-center text-lg text-black transition-colors hover:bg-lt-mx-yellow lg:rounded-full"
                     }
                     target="_blank"
+                    rel="noopener noreferrer"
                   >
                     What&apos;s my level?
-                  </Link>
+                  </a>
                   <Link
                     to="/contact"
                     className={
@@ -126,14 +127,14 @@ const ClassCard = ({
                   >
                     Book a class
                   </Link>
-                  <Link
+                  <button
                     onClick={handleOpen}
                     className={
                       "m-4 block rounded-full bg-mx-yellow px-6 py-2 text-center text-lg text-black transition-colors hover:bg-lt-mx-yellow lg:rounded-full"
                     }
                   >
-                    Go Back
-                  </Link>
+                    Close
+                  </button>
                 </DialogFooter>
               </div>
             </div>

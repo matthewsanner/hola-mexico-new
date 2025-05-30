@@ -65,6 +65,7 @@ function Faq() {
                 <button
                   key={tab}
                   onClick={() => setActiveTab(tab)}
+                  aria-label={`Toggle ${tab}`}
                   className={`rounded-t-lg px-4 py-2 text-lg ${
                     activeTab === tab
                       ? "border-b-2 border-navy-blue font-bold text-navy-blue"
@@ -82,6 +83,7 @@ function Faq() {
                   <div key={index} className="border-b py-3">
                     <button
                       className="flex w-full items-center justify-between text-left text-lg font-medium"
+                      aria-label={`Toggle ${item.question}`}
                       onClick={() => toggleQuestion(index)}
                     >
                       {item.question}

@@ -14,12 +14,17 @@ function NavBar() {
 
   return (
     <div className="bg-navy-blue">
-      <nav className="mx-auto max-w-[1400px] p-4 pb-8">
+      <nav
+        className="mx-auto max-w-[1400px] p-4 pb-8"
+        aria-label="Main site navigation"
+      >
         <div className="flex items-center justify-center">
           {/* Hamburger Icon (only visible on small screens) */}
           <button
             onClick={toggleMenu}
             className="p-4 text-white focus:outline-none xl:hidden"
+            aria-label="Toggle navigation menu"
+            aria-expanded={isMenuOpen}
           >
             <svg
               className="h-10 w-10"
@@ -27,6 +32,7 @@ function NavBar() {
               stroke="currentColor"
               viewBox="0 0 24 24"
               xmlns="http://www.w3.org/2000/svg"
+              aria-hidden="true"
             >
               <path
                 strokeLinecap="round"
@@ -47,7 +53,7 @@ function NavBar() {
           <li className="flex-1">
             <Link
               to="/"
-              className="nav-link rounded-t-full xl:rounded-full"
+              className="nav-link xl:rounded-full"
               onClick={closeMenu}
             >
               Home

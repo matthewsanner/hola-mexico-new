@@ -10,10 +10,17 @@ import Blog from "./pages/Blog";
 import Contact from "./pages/Contact";
 import Footer from "./components/Footer";
 import ScrollToTop from "./components/ScrollToTop";
+import usePageTracking from "./hooks/usePageTracking";
 
 function App() {
+  function PageTracker() {
+    usePageTracking();
+    return null;
+  }
+
   return (
     <Router>
+      <PageTracker />
       <ScrollToTop />
       <Header />
       <NavBar />

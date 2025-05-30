@@ -221,50 +221,91 @@ function Methodology() {
               <li>
                 Lessons are tailored to individual goals using platforms and
                 resources like{" "}
-                <a href="https://www.zoom.com/" target="_blank">
+                <a
+                  href="https://www.zoom.com/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
                   Zoom
                 </a>
                 ,{" "}
-                <a href="https://h5p.org/" target="_blank">
+                <a
+                  href="https://h5p.org/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
                   H5P
                 </a>
                 ,{" "}
-                <a href="https://genially.com/" target="_blank">
+                <a
+                  href="https://genially.com/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
                   Genially
                 </a>
                 ,{" "}
-                <a href="https://wordwall.net/" target="_blank">
+                <a
+                  href="https://wordwall.net/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
                   Wordwall
                 </a>
                 ,{" "}
-                <a href="https://learningapps.org/" target="_blank">
+                <a
+                  href="https://learningapps.org/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
                   LearningApps
                 </a>
                 ,{" "}
-                <a href="https://quizlet.com/" target="_blank">
+                <a
+                  href="https://quizlet.com/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
                   Quizlet
                 </a>
                 ,{" "}
                 <a
                   href="https://workspace.google.com/products/forms/"
                   target="_blank"
+                  rel="noopener noreferrer"
                 >
                   Google Forms
                 </a>
                 ,{" "}
-                <a href="https://quizizz.com/" target="_blank">
+                <a
+                  href="https://quizizz.com/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
                   Quizizz
                 </a>
                 ,{" "}
-                <a href="https://espanol.lingolia.com/en/" target="_blank">
+                <a
+                  href="https://espanol.lingolia.com/en/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
                   Lingolia
                 </a>
                 ,{" "}
-                <a href="https://www.profedeele.es/" target="_blank">
+                <a
+                  href="https://www.profedeele.es/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
                   ProfeDeELE
                 </a>
                 ,{" "}
-                <a href="https://arche-ele.com/" target="_blank">
+                <a
+                  href="https://arche-ele.com/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
                   Arche-ELE
                 </a>{" "}
                 and more...
@@ -329,20 +370,25 @@ function Methodology() {
             />
           </div>
           <div className="flex flex-col items-center p-6 pb-20 lg:order-1 lg:w-1/2 lg:pb-6">
-            <a href="mailto:holamexicohola@gmail.com">
-              <div className="m-4 min-w-96 rounded-lg border border-black p-4 text-center text-lg shadow-xl hover:bg-mx-yellow">
-                Email: holamexicohola@gmail.com
-              </div>
+            <a
+              href="mailto:holamexicohola@gmail.com"
+              className="m-4 block min-w-96 rounded-lg border border-black p-4 text-center text-lg shadow-xl hover:bg-mx-yellow"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Email: holamexicohola@gmail.com
             </a>
-            <a href="tel:+525520616969">
-              <div className="m-4 min-w-96 rounded-lg border border-black p-4 text-center text-lg shadow-xl hover:bg-mx-yellow">
-                WhatsApp: +52 55 2061 6969
-              </div>
+            <a
+              href="tel:+525520616969"
+              className="m-4 block min-w-96 rounded-lg border border-black p-4 text-center text-lg shadow-xl hover:bg-mx-yellow"
+            >
+              WhatsApp: +52 55 2061 6969
             </a>
-            <a href="tel:+525570254108">
-              <div className="m-4 min-w-96 rounded-lg border border-black p-4 text-center text-lg shadow-xl hover:bg-mx-yellow">
-                Office: +52 55 7025 4108
-              </div>
+            <a
+              href="tel:+525570254108"
+              className="m-4 block min-w-96 rounded-lg border border-black p-4 text-center text-lg shadow-xl hover:bg-mx-yellow"
+            >
+              Office: +52 55 7025 4108
             </a>
           </div>
         </div>

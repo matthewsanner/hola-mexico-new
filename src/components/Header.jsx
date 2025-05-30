@@ -12,31 +12,33 @@ function Header() {
           </h1>
         </Link>
 
-        {/* Right Section - Social Icons */}
         <div className="flex space-x-6">
           <a
             href="https://www.instagram.com/holamexicohola"
             target="_blank"
             rel="noopener noreferrer"
+            aria-label="Visit our Instagram profile"
             className="text-white hover:text-gray-300"
           >
-            <FaInstagram size={30} />
+            <FaInstagram size={30} aria-hidden="true" />
           </a>
           <a
             href="https://www.facebook.com/holamexicohola"
             target="_blank"
             rel="noopener noreferrer"
+            aria-label="Visit our Facebook page"
             className="text-white hover:text-gray-300"
           >
-            <FaFacebook size={30} />
+            <FaFacebook size={30} aria-hidden="true" />
           </a>
           <a
             href="https://www.linkedin.com/company/hola-m%C3%A9xico-hola-spanish-lessons"
             target="_blank"
             rel="noopener noreferrer"
+            aria-label="Visit our LinkedIn profile"
             className="text-white hover:text-gray-300"
           >
-            <FaLinkedin size={30} />
+            <FaLinkedin size={30} aria-hidden="true" />
           </a>
         </div>
       </div>

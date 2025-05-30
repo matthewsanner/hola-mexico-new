@@ -10,40 +10,40 @@ function Footer() {
           {/* Left Side */}
           <div className="flex flex-col items-center space-y-4">
             {/* Quick Links */}
-            <h3 className="mb-2 text-lg font-bold">Quick Links</h3>
+            <h3 className="sr-only mb-2 text-lg font-bold">Quick Links</h3>
             <ul className="flex flex-wrap justify-center space-x-3">
               <li>
-                <Link to="/" className="hover:underline">
+                <Link to="/" className="underline">
                   Home
                 </Link>
               </li>
               <li>
-                <Link to="/methodology" className="hover:underline">
+                <Link to="/methodology" className="underline">
                   Methodology
                 </Link>
               </li>
               <li>
-                <Link to="/classes" className="hover:underline">
+                <Link to="/classes" className="underline">
                   Classes & Courses
                 </Link>
               </li>
               <li>
-                <Link to="/about" className="hover:underline">
+                <Link to="/about" className="underline">
                   About / Testimonials
                 </Link>
               </li>
               <li>
-                <Link to="/faq" className="hover:underline">
+                <Link to="/faq" className="underline">
                   FAQ
                 </Link>
               </li>
               <li>
-                <a href="/blog" className="hover:underline">
+                <a href="/blog" className="underline">
                   Blog
                 </a>
               </li>
               <li>
-                <Link to="/contact" className="hover:underline">
+                <Link to="/contact" className="underline">
                   Contact / Book
                 </Link>
               </li>
@@ -52,7 +52,7 @@ function Footer() {
             {/* Call to Action */}
             <p className="text-center text-lg font-semibold">
               Ready to start learning Spanish?{" "}
-              <a href="/contact" className="text-mx-yellow hover:underline">
+              <a href="/contact" className="text-mx-yellow underline">
                 Contact us today
               </a>{" "}
               to schedule your free trial class!
@@ -65,24 +65,27 @@ function Footer() {
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-white hover:text-gray-300"
+                aria-label="Visit our Instagram page"
               >
-                <FaInstagram size={30} />
+                <FaInstagram size={30} aria-hidden="true" />
               </a>
               <a
                 href="https://www.facebook.com/holamexicohola"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-white hover:text-gray-300"
+                aria-label="Visit our Facebook page"
               >
-                <FaFacebook size={30} />
+                <FaFacebook size={30} aria-hidden="true" />
               </a>
               <a
                 href="https://www.linkedin.com/company/hola-m%C3%A9xico-hola-spanish-lessons"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-white hover:text-gray-300"
+                aria-label="Visit our LinkedIn page"
               >
-                <FaLinkedin size={30} />
+                <FaLinkedin size={30} aria-hidden="true" />
               </a>
             </div>
           </div>
@@ -90,25 +93,22 @@ function Footer() {
           {/* Right Side */}
           <div className="flex flex-col items-center space-y-4">
             {/* Contact Information */}
-            <h3 className="mb-2 text-lg font-bold">Contact</h3>
+            <h3 className="sr-only mb-2 text-lg font-bold">Contact</h3>
             <p>
               Email:{" "}
-              <a
-                href="mailto:holamexicohola@gmail.com"
-                className="hover:underline"
-              >
+              <a href="mailto:holamexicohola@gmail.com" className="underline">
                 holamexicohola@gmail.com
               </a>
             </p>
             <p>
               WhatsApp:{" "}
-              <a href="tel:+525520616969" className="hover:underline">
+              <a href="tel:+525520616969" className="underline">
                 +52 55 2061 6969
               </a>
             </p>
             <p>
               Office:{" "}
-              <a href="tel:+525570254108" className="hover:underline">
+              <a href="tel:+525570254108" className="underline">
                 +52 55 7025 4108
               </a>
             </p>

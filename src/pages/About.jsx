@@ -100,6 +100,7 @@ function About() {
                 size="lg"
                 onClick={handlePrev}
                 className="!absolute left-1 top-2/4 -translate-y-3/4"
+                aria-label="Previous slide"
               >
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -108,6 +109,7 @@ function About() {
                   strokeWidth={2}
                   stroke="currentColor"
                   className="h-10 w-10"
+                  aria-hidden="true"
                 >
                   <path
                     strokeLinecap="round"
@@ -124,6 +126,7 @@ function About() {
                 size="lg"
                 onClick={handleNext}
                 className="!absolute !right-1 top-2/4 -translate-y-3/4"
+                aria-label="Next slide"
               >
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -132,6 +135,7 @@ function About() {
                   strokeWidth={2}
                   stroke="currentColor"
                   className="h-10 w-10"
+                  aria-hidden="true"
                 >
                   <path
                     strokeLinecap="round"

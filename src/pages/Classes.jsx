@@ -106,6 +106,7 @@ function Classes() {
                 size="lg"
                 onClick={handlePrev}
                 className="!absolute left-1 top-2/4 -translate-y-2/4"
+                aria-label="Previous slide"
               >
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -114,6 +115,7 @@ function Classes() {
                   strokeWidth={2}
                   stroke="currentColor"
                   className="h-10 w-10 stroke-mx-yellow"
+                  aria-hidden="true"
                 >
                   <path
                     strokeLinecap="round"
@@ -130,6 +132,7 @@ function Classes() {
                 size="lg"
                 onClick={handleNext}
                 className="!absolute !right-1 top-2/4 -translate-y-2/4"
+                aria-label="Next slide"
               >
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -138,6 +141,7 @@ function Classes() {
                   strokeWidth={2}
                   stroke="currentColor"
                   className="h-10 w-10 stroke-mx-yellow"
+                  aria-hidden="true"
                 >
                   <path
                     strokeLinecap="round"
@@ -293,21 +297,28 @@ function Classes() {
             </div>
           </a>
 
-          <a href="mailto:holamexicohola@gmail.com">
-            <div className="m-4 min-w-96 rounded-lg border border-black p-4 text-center text-lg shadow-xl hover:bg-mx-yellow">
+          <div className="flex flex-col items-center p-6 pb-20 lg:order-1 lg:w-1/2 lg:pb-6">
+            <a
+              href="mailto:holamexicohola@gmail.com"
+              className="m-4 block min-w-96 rounded-lg border border-black p-4 text-center text-lg shadow-xl hover:bg-mx-yellow"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               Email: holamexicohola@gmail.com
-            </div>
-          </a>
-          <a href="tel:+525520616969">
-            <div className="m-4 min-w-96 rounded-lg border border-black p-4 text-center text-lg shadow-xl hover:bg-mx-yellow">
+            </a>
+            <a
+              href="tel:+525520616969"
+              className="m-4 block min-w-96 rounded-lg border border-black p-4 text-center text-lg shadow-xl hover:bg-mx-yellow"
+            >
               WhatsApp: +52 55 2061 6969
-            </div>
-          </a>
-          <a href="tel:+525570254108">
-            <div className="m-4 min-w-96 rounded-lg border border-black p-4 text-center text-lg shadow-xl hover:bg-mx-yellow">
+            </a>
+            <a
+              href="tel:+525570254108"
+              className="m-4 block min-w-96 rounded-lg border border-black p-4 text-center text-lg shadow-xl hover:bg-mx-yellow"
+            >
               Office: +52 55 7025 4108
-            </div>
-          </a>
+            </a>
+          </div>
         </div>
       </div>
     </div>

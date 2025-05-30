@@ -347,6 +347,7 @@ function Home() {
                 color="white"
                 size="lg"
                 onClick={handlePrev}
+                aria-label="Previous slide"
                 className="!absolute left-1 top-2/4 -translate-y-2/4"
               >
                 <svg
@@ -356,6 +357,7 @@ function Home() {
                   strokeWidth={2}
                   stroke="currentColor"
                   className="h-10 w-10"
+                  aria-hidden="true"
                 >
                   <path
                     strokeLinecap="round"
@@ -371,6 +373,7 @@ function Home() {
                 color="white"
                 size="lg"
                 onClick={handleNext}
+                aria-label="Next slide"
                 className="!absolute !right-1 top-2/4 -translate-y-2/4"
               >
                 <svg
@@ -380,6 +383,7 @@ function Home() {
                   strokeWidth={2}
                   stroke="currentColor"
                   className="h-10 w-10"
+                  aria-hidden="true"
                 >
                   <path
                     strokeLinecap="round"
@@ -552,6 +556,7 @@ function Home() {
                 color="black"
                 size="lg"
                 onClick={handlePrev}
+                aria-label="Previous slide"
                 className="!absolute left-1 top-2/4 -translate-y-2/4"
               >
                 <svg
@@ -561,6 +566,7 @@ function Home() {
                   strokeWidth={2}
                   stroke="currentColor"
                   className="h-10 w-10"
+                  aria-hidden="true"
                 >
                   <path
                     strokeLinecap="round"
@@ -576,6 +582,7 @@ function Home() {
                 color="black"
                 size="lg"
                 onClick={handleNext}
+                aria-label="Next slide"
                 className="!absolute !right-1 top-2/4 -translate-y-2/4"
               >
                 <svg
@@ -585,6 +592,7 @@ function Home() {
                   strokeWidth={2}
                   stroke="currentColor"
                   className="h-10 w-10"
+                  aria-hidden="true"
                 >
                   <path
                     strokeLinecap="round"
@@ -628,21 +636,28 @@ function Home() {
               </div>
             </a>
 
-            <a href="mailto:holamexicohola@gmail.com">
-              <div className="m-4 min-w-96 rounded-lg border border-black p-4 text-center text-lg shadow-xl hover:bg-mx-yellow">
+            <div className="flex flex-col items-center p-6 pb-20 lg:order-1 lg:w-1/2 lg:pb-6">
+              <a
+                href="mailto:holamexicohola@gmail.com"
+                className="m-4 block min-w-96 rounded-lg border border-black p-4 text-center text-lg shadow-xl hover:bg-mx-yellow"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 Email: holamexicohola@gmail.com
-              </div>
-            </a>
-            <a href="tel:+525520616969">
-              <div className="m-4 min-w-96 rounded-lg border border-black p-4 text-center text-lg shadow-xl hover:bg-mx-yellow">
+              </a>
+              <a
+                href="tel:+525520616969"
+                className="m-4 block min-w-96 rounded-lg border border-black p-4 text-center text-lg shadow-xl hover:bg-mx-yellow"
+              >
                 WhatsApp: +52 55 2061 6969
-              </div>
-            </a>
-            <a href="tel:+525570254108">
-              <div className="m-4 min-w-96 rounded-lg border border-black p-4 text-center text-lg shadow-xl hover:bg-mx-yellow">
+              </a>
+              <a
+                href="tel:+525570254108"
+                className="m-4 block min-w-96 rounded-lg border border-black p-4 text-center text-lg shadow-xl hover:bg-mx-yellow"
+              >
                 Office: +52 55 7025 4108
-              </div>
-            </a>
+              </a>
+            </div>
           </div>
           <div className="max-w-xl p-4 md:w-1/3">
             <img
@@ -663,36 +678,3 @@ function Home() {
 }
 
 export default Home;
-
-// import React from "react";
-
-// const [open, setOpen] = React.useState(false);
-
-// const handleOpen = () => setOpen(!open);
-
-/* 
-<img
-  onClick={handleOpen}
-  className="w-5/6 cursor-pointer"
-  src={online_classes}
-  alt="online classes, 1-on-1, personalized and flexible, tailored to your schedule"
-/> 
-*/
-
-/* 
-<Dialog open={open} handler={handleOpen}>
-  <DialogHeader>Its a simple modal.</DialogHeader>
-  <DialogBody>
-    The key to more success is to have a lot of pillows. Put it
-    this way, it took me twenty five years to get these plants,
-    twenty five years of blood sweat and tears, and I&apos;m never
-    giving up, I&apos;m just getting started. I&apos;m up to
-    something. Fan luv.
-  </DialogBody>
-  <DialogFooter>
-    <Button variant="gradient" color="green" onClick={handleOpen}>
-      <span>Go Back</span>
-    </Button>
-  </DialogFooter>
-</Dialog> 
-*/

@@ -1,0 +1,5 @@
+User-agent: *
+Disallow:
+
+Sitemap: https://holamexicohola.com/sitemap.xml
+Sitemap: https://holamexicohola.com/blog/sitemap_index.xml
